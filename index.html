@@ -2,27 +2,60 @@
 <html lang="en">
 
 <head>
-    <title>Suleman Shekh</title>
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body>
+<body id="to-top" class="noselect">
+    <div class="loader">
+        <h6 class="loading-text"></h6>
+    </div>
     <div class="page-content">
         <main>
             <!-- Intro -->
             <section id="intro">
-                <div class="container">
+                <div class="container" data-aos="fade-down" data-aos-duration="1000">
                     <div class="text">
                         <h1>
                             Hi, I am<br />
-                            <span>Suleman</span>
+                            <span class="green my-name">Suleman,</span>
                             <br />
                         </h1>
+                        <div class="typing">
+                            <h2><span class="typing-text noselect"></span></h2>
+                        </div>
                         <p>
-                            Welcome to my portfolio!
+                            Hey there! I'm a passionate 
+                            <span id="intro-p">Frontend Developer,</span> crafting sleek and interactive 
+                            <span id="intro-p">web experiences</span> Turning
+                            <span id="intro-p">Ideas</span> into
+                            <span id="intro-p">seamless UI</span> is my forte, and now, I'm leveling up to
+                            <span id="intro-p">Full Stack Development.</span> Welcome to my digital playground—let’s 
+                            <span id="intro-p">Build</span> something amazing!  
                         </p>
+                        <div class="intro-btns">
+                            <a class="button btn-cv-download noselect" href="#"><i
+                                    class="fa-solid fa-cloud-arrow-down fa-lg"></i>Resume</a>
+                            <a class="button btn-contact contact-btn hb-fill-right-bg noselect" onclick="toContact()"><i
+                                    class="fa-regular fa-envelope fa-lg"></i>
+                                <span>Contact Me</span></a>
+                        </div>
+                        <a class="scroll noselect" onclick="toAbout()">Scroll Down</a>
+                    </div>
+                    <div class="img">
+                        <img onContextMenu="return false;" loading="lazy" class="intro-img" cross-origin="use-credentials" src="img/intro-img.webp"
+                            alt="intro-image" />
                     </div>
                 </div>
             </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0a73ff5289.js" crossorigin="anonymous"></script>
+
+        <script src="js/main.js"></script>
+
+    </div>
 </body>
 
 </html>
